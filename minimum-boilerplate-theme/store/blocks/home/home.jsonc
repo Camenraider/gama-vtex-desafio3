@@ -1,0 +1,191 @@
+{
+  "store.home": {
+    "blocks": [
+      "tab-layout",
+      "flex-layout.row#home-prod",
+      "flex-layout.row#home-prod1",
+      "flex-layout.row#home-prod2" 
+    ]
+  },
+  // tab-layout -------------------------------------------------------------------------------------------
+  "tab-layout": {
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2",
+      "tab-list.item#3",
+      "tab-list.item#4"
+      ]
+  },
+  "tab-content": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2",
+      "tab-content.item#3",
+      "tab-content.item#4"
+      ]
+  },
+
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "promocao",
+      "label": "PROMOÇÃO"
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "corintians",
+      "label": "CORINTIANS"
+    }
+  },
+
+  "tab-list.item#3": {
+    "props":{
+      "tabId": "palmeiras",
+      "label": "PALMEIRAS"
+    }
+  },
+
+  "tab-list.item#4": {
+    "props":{
+      "borderColor": "black",
+      "tabId": "signos",
+      "label": "SIGNOS"
+    }
+  },
+
+   "tab-content.item#1": {
+    "children": [
+     
+    ],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+     
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#3": {
+    "children": [],
+    "props": {
+      "tabId": "corintians"
+    }
+  },
+  "tab-content.item#4": {
+    "children": [],
+    "props": {
+      "borderColor": "white",
+      "tabId" :"signos"
+    }
+  },
+
+"flex-layout.row#home-prod": {
+  "children": [
+    "list-context.image-list#home"
+  ]
+},
+
+"list-context.image-list#home": {
+  "children": ["slider-layout#home"],
+  "props": {
+    "height": 420,
+    "images": [
+      {
+        "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf",
+        "description": "something something"
+      },
+      {
+        "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e",
+        "description": "something something"
+      }
+    ]
+  }
+},
+
+"slider-layout#home": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly"
+  }
+},
+
+
+
+  // flex-layout 1-----------------------------------------------------------------------------------------------
+  "flex-layout.row#home-prod1": {
+    "children": [
+      "image#home-prod1",
+      "flex-layout.col#home-prod"
+    ]
+  },
+  "flex-layout.col#home-prod":{
+    "children": [
+      "image#home-prod2"
+      
+    ]
+  },
+
+  "image#home-prod1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629377501-post-libra.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "image#home-prod2":{
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1627336500-01.png",
+        "maxHeight": "",
+        "maxWidth": "",
+        "blockClass": "storePrint"
+    }
+  },
+
+  // flex-layout 2 --------------------------------------------------------------------------------------------------
+  "flex-layout.row#home-prod2": {
+    "children": [
+      "image#home-prod3",
+      "flex-layout.col#home-prod2"
+    ]
+  },
+  "flex-layout.col#home-prod2":{
+    "children": [
+      "image#home-prod4"
+      
+    ]
+  },
+
+  "image#home-prod3": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629219624-POST.png",
+      "maxHeight": "450",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "image#home-prod4":{
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/1629141914-POST.png",
+        "maxHeight": "450",
+        "maxWidth": "",
+        "blockClass": "storePrint"
+    }
+  }
+}

@@ -1,8 +1,10 @@
-
-
 .searchBarIcon{
     color: #000;
 }
 .searchBarIcon--search{
     color: #fff;
+}
+
+.searchBarContainer{
+    align-content: center;
 }

@@ -33,6 +33,10 @@
       "minicart.v2"
     ]
   },
+  "minicart-product-list#example": {
+    "blocks": ["product-list"]
+  },
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -40,15 +44,16 @@
   },
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "left"
     },
     "children": ["logo"]
   },
   "logo": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "rich-text": "12% de desconto",
+      "title": "logo",
+      "href": "",
+      "url": "",
       "width": "150"
     }
   },
